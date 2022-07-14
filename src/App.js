@@ -43,12 +43,12 @@ function App() {
                 </span>
               </button>
             </div>
-            <img src={theme === "dark" ? "./hooks/img.png" : './hooks/imgd.png'} id='imag' />
+            <img src={theme == "dark" ? "https://i.ibb.co/wLrpZKS/helpb.png" : "https://i.ibb.co/tXzr3RG/helpw.png"} id='imag' />
           </div>
         </div>
         }
         <nav>
-          <img src={theme === "dark" ? `./hooks/helpb.png` : `./hooks/helpw.png`} onClick={() => { setModalOpen(true); }} />
+          {/* <img src={theme == "dark" ? `../img/img.png` : `https://i.ibb.co/1v2CLtd/imgd.png`} onClick={() => { setModalOpen(true); }} /> */}
           <h1>Wordle</h1>
           <div className="switch">
             <span>☀️</span>
@@ -58,7 +58,7 @@ function App() {
         </nav>
         <hr style={theme === "light" ? { color: '#000000', height: 1, backgroundColor: '#000000' } :
           { color: '#ffffff', height: .8, backgroundColor: '#ffffff', }} />
-        {solution && !modalOpen && <Wordle solution={solution} />}
+        {solution && <Wordle solution={solution} />}
       </div>
     </ThemeContext.Provider>
   );
