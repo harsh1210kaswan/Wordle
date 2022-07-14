@@ -43,12 +43,12 @@ function App() {
                 </span>
               </button>
             </div>
-            <img src={theme === "dark" ? 'https://i.ibb.co/wLrpZKS/helpb.png' : 'https://i.ibb.co/tXzr3RG/helpw.png'} id='imag' />
+            <img src={theme === "dark" ? "./hooks/img.png" : './hooks/imgd.png'} id='imag' />
           </div>
         </div>
         }
         <nav>
-          <img src={theme === "dark" ? `https://raw.githubusercontent.com/harsh1210kaswan/Wordle/gh-pages/img/img.png` : `https://raw.githubusercontent.com/harsh1210kaswan/Wordle/gh-pages/img/img.png`} onClick={() => { setModalOpen(true); }} />
+          <img src={theme === "dark" ? `./hooks/helpb.png` : `./hooks/helpw.png`} onClick={() => { setModalOpen(true); }} />
           <h1>Wordle</h1>
           <div className="switch">
             <span>☀️</span>
