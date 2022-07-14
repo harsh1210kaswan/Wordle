@@ -48,7 +48,7 @@ function App() {
         </div>
         }
         <nav>
-          <img src={theme === "dark" ? `https://i.ibb.co/zn8Tb8r/img.png` : `https://i.ibb.co/1v2CLtd/imgd.png`} onClick={() => { setModalOpen(true); }} />
+          <img src={theme === "dark" ? `https://raw.githubusercontent.com/harsh1210kaswan/Wordle/gh-pages/img/img.png` : `https://raw.githubusercontent.com/harsh1210kaswan/Wordle/gh-pages/img/img.png`} onClick={() => { setModalOpen(true); }} />
           <h1>Wordle</h1>
           <div className="switch">
             <span>☀️</span>
